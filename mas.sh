@@ -1,9 +1,6 @@
 # Amphetamine
 mas install 937984704
 
-# Intermission - Breaks For Eyes
-mas install 1439431081 
-
 # Notability
 mas install 360593530
 

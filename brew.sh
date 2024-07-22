@@ -99,6 +99,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Casks
 brew install mas
+brew install --cask chatgpt
 
 # # Remove outdated versions from the cellar.
 # brew cleanup
