@@ -101,6 +101,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install mas
 brew install --cask chatgpt
 brew install --cask fing
+brew install --cask rectangle-pro
 
 # # Remove outdated versions from the cellar.
 # brew cleanup
