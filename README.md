@@ -2,6 +2,23 @@
 
 ![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
 
+## What Taylor Does
+
+### Installs Homebrew
+- Opens Terminal
+- Runs `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` (from [brew.sh](https://brew.sh)
+- Install `brew` to my PATH
+  - `echo >> /Users/taylorsabell/.zprofile` (provided by Homebrew)
+  - `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/taylorsabell/.zprofile` (provided by Homebrew)
+  - `eval "$(/opt/homebrew/bin/brew shellenv)"` (provided by Homebrew)
+
+### Get the Repo
+- Opens Safari
+- Logs into GitHub
+- Downloads this repo
+- Opens Terminal, goes to where the repo was downloaded and allows Terminal to access files in the Downloads folder
+- Runs `sh brew.sh`
+
 ## Installation
 
 **Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
