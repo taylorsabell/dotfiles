@@ -15,8 +15,7 @@
 # alias p="cd ~/projects"
 alias g="git"
 alias w="clear" # For 'wipe'
-alias hey="print hey"
-alias yo="print yo"
+alias m="make"
 
 # # Detect which `ls` flavor is in use
 # if ls --color > /dev/null 2>&1; then # GNU `ls`
