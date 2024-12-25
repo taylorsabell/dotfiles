@@ -104,11 +104,13 @@ brew install node
 brew install --cask 1password
 brew install --cask 1password-cli
 brew install --cask bitwarden
+brew install --cask bruno
 brew install --cask dbeaver-community
 brew install --cask docker
 brew install --cask figma
 brew install --cask flux
 brew install --cask google-chrome
+brew install --cask google-drive
 brew install --cask iterm2
 brew install --cask rectangle-pro
 brew install --cask slack
