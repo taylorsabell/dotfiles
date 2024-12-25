@@ -97,5 +97,13 @@ brew install gs
 # brew install vbindiff
 # brew install zopfli
 
+# Installs casks
+brew install --cask 1password-cli
+brew install --cask dbeaver-community
+brew install --cask figma
+brew install --cask google-chrome
+brew install --cask slack
+brew install --cask visual-studio-code
+
 # Remove outdated versions from the cellar.
 brew cleanup
