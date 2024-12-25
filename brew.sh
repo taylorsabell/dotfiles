@@ -97,9 +97,13 @@ brew install gs
 # brew install vbindiff
 # brew install zopfli
 
+# Install more dev stuff
+brew install node
+
 # Installs casks
 brew install --cask 1password-cli
 brew install --cask dbeaver-community
+brew install --cask docker
 brew install --cask figma
 brew install --cask google-chrome
 brew install --cask slack
