@@ -31,6 +31,11 @@
 - Flux
 - iTerm2
 - Slack
+- System Settings
+  - Internet Accounts
+
+### Configure More Apps
+- Contacts
 
 ### Generate SSH Key
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
