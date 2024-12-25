@@ -27,6 +27,7 @@
 - 1Password
 - Chrome
   - Turn off all the crap Google opts you into
+- Finder
 - Flux
 - iTerm2
 - Slack
