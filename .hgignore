@@ -1,4 +1,4 @@
-# Use shell-style glob syntax
+<!-- # Use shell-style glob syntax
 syntax: glob
 
 # Compiled Python files
@@ -14,4 +14,4 @@ Thumbs.db
 
 # Files that might appear on external disks
 .Spotlight-V100
-.Trashes
+.Trashes -->

@@ -1,106 +1,106 @@
-" Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
+@REM " Use the Solarized Dark theme
+@REM set background=dark
+@REM colorscheme solarized
+@REM let g:solarized_termtrans=1
 
-" Make Vim more useful
-set nocompatible
-" Use the OS clipboard by default (on versions compiled with `+clipboard`)
-set clipboard=unnamed
-" Enhance command-line completion
-set wildmenu
-" Allow cursor keys in insert mode
-set esckeys
-" Allow backspace in insert mode
-set backspace=indent,eol,start
-" Optimize for fast terminal connections
-set ttyfast
-" Add the g flag to search/replace by default
-set gdefault
-" Use UTF-8 without BOM
-set encoding=utf-8 nobomb
-" Change mapleader
-let mapleader=","
-" Don’t add empty newlines at the end of files
-set binary
-set noeol
-" Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-if exists("&undodir")
-	set undodir=~/.vim/undo
-endif
+@REM " Make Vim more useful
+@REM set nocompatible
+@REM " Use the OS clipboard by default (on versions compiled with `+clipboard`)
+@REM set clipboard=unnamed
+@REM " Enhance command-line completion
+@REM set wildmenu
+@REM " Allow cursor keys in insert mode
+@REM set esckeys
+@REM " Allow backspace in insert mode
+@REM set backspace=indent,eol,start
+@REM " Optimize for fast terminal connections
+@REM set ttyfast
+@REM " Add the g flag to search/replace by default
+@REM set gdefault
+@REM " Use UTF-8 without BOM
+@REM set encoding=utf-8 nobomb
+@REM " Change mapleader
+@REM let mapleader=","
+@REM " Don’t add empty newlines at the end of files
+@REM set binary
+@REM set noeol
+@REM " Centralize backups, swapfiles and undo history
+@REM set backupdir=~/.vim/backups
+@REM set directory=~/.vim/swaps
+@REM if exists("&undodir")
+@REM 	set undodir=~/.vim/undo
+@REM endif
 
-" Don’t create backups when editing files in certain directories
-set backupskip=/tmp/*,/private/tmp/*
+@REM " Don’t create backups when editing files in certain directories
+@REM set backupskip=/tmp/*,/private/tmp/*
 
-" Respect modeline in files
-set modeline
-set modelines=4
-" Enable per-directory .vimrc files and disable unsafe commands in them
-set exrc
-set secure
-" Enable line numbers
-set number
-" Enable syntax highlighting
-syntax on
-" Highlight current line
-set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
-" Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list
-" Highlight searches
-set hlsearch
-" Ignore case of searches
-set ignorecase
-" Highlight dynamically as pattern is typed
-set incsearch
-" Always show status line
-set laststatus=2
-" Enable mouse in all modes
-set mouse=a
-" Disable error bells
-set noerrorbells
-" Don’t reset cursor to start of line when moving around.
-set nostartofline
-" Show the cursor position
-set ruler
-" Don’t show the intro message when starting Vim
-set shortmess=atI
-" Show the current mode
-set showmode
-" Show the filename in the window titlebar
-set title
-" Show the (partial) command as it’s being typed
-set showcmd
-" Use relative line numbers
-if exists("&relativenumber")
-	set relativenumber
-	au BufReadPost * set relativenumber
-endif
-" Start scrolling three lines before the horizontal window border
-set scrolloff=3
+@REM " Respect modeline in files
+@REM set modeline
+@REM set modelines=4
+@REM " Enable per-directory .vimrc files and disable unsafe commands in them
+@REM set exrc
+@REM set secure
+@REM " Enable line numbers
+@REM set number
+@REM " Enable syntax highlighting
+@REM syntax on
+@REM " Highlight current line
+@REM set cursorline
+@REM " Make tabs as wide as two spaces
+@REM set tabstop=2
+@REM " Show “invisible” characters
+@REM set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+@REM set list
+@REM " Highlight searches
+@REM set hlsearch
+@REM " Ignore case of searches
+@REM set ignorecase
+@REM " Highlight dynamically as pattern is typed
+@REM set incsearch
+@REM " Always show status line
+@REM set laststatus=2
+@REM " Enable mouse in all modes
+@REM set mouse=a
+@REM " Disable error bells
+@REM set noerrorbells
+@REM " Don’t reset cursor to start of line when moving around.
+@REM set nostartofline
+@REM " Show the cursor position
+@REM set ruler
+@REM " Don’t show the intro message when starting Vim
+@REM set shortmess=atI
+@REM " Show the current mode
+@REM set showmode
+@REM " Show the filename in the window titlebar
+@REM set title
+@REM " Show the (partial) command as it’s being typed
+@REM set showcmd
+@REM " Use relative line numbers
+@REM if exists("&relativenumber")
+@REM 	set relativenumber
+@REM 	au BufReadPost * set relativenumber
+@REM endif
+@REM " Start scrolling three lines before the horizontal window border
+@REM set scrolloff=3
 
-" Strip trailing whitespace (,ss)
-function! StripWhitespace()
-	let save_cursor = getpos(".")
-	let old_query = getreg('/')
-	:%s/\s\+$//e
-	call setpos('.', save_cursor)
-	call setreg('/', old_query)
-endfunction
-noremap <leader>ss :call StripWhitespace()<CR>
-" Save a file as root (,W)
-noremap <leader>W :w !sudo tee % > /dev/null<CR>
+@REM " Strip trailing whitespace (,ss)
+@REM function! StripWhitespace()
+@REM 	let save_cursor = getpos(".")
+@REM 	let old_query = getreg('/')
+@REM 	:%s/\s\+$//e
+@REM 	call setpos('.', save_cursor)
+@REM 	call setreg('/', old_query)
+@REM endfunction
+@REM noremap <leader>ss :call StripWhitespace()<CR>
+@REM " Save a file as root (,W)
+@REM noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
-" Automatic commands
-if has("autocmd")
-	" Enable file type detection
-	filetype on
-	" Treat .json files as .js
-	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-	" Treat .md files as Markdown
-	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
-endif
+@REM " Automatic commands
+@REM if has("autocmd")
+@REM 	" Enable file type detection
+@REM 	filetype on
+@REM 	" Treat .json files as .js
+@REM 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+@REM 	" Treat .md files as Markdown
+@REM 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+@REM endif
