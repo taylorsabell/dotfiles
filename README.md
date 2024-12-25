@@ -4,6 +4,10 @@
 
 ## What Taylor Does
 
+### Install Oh My Zsh
+- Opens Terminal
+- Runs `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` (from [ohmyz.sh](https://ohmyz.sh/#install)
+
 ### Installs Homebrew
 - Opens Terminal
 - Runs `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` (from [brew.sh](https://brew.sh)
@@ -18,6 +22,8 @@
 - Downloads this repo
 - Opens Terminal, goes to where the repo was downloaded and allows Terminal to access files in the Downloads folder
 - Runs `sh brew.sh`
+
+### 
 
 ## Installation
 
