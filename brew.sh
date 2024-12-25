@@ -107,8 +107,10 @@ brew install --cask bitwarden
 brew install --cask dbeaver-community
 brew install --cask docker
 brew install --cask figma
+brew install --cask flux
 brew install --cask google-chrome
 brew install --cask iterm2
+brew install --cask rectangle-pro
 brew install --cask slack
 brew install --cask visual-studio-code
 
