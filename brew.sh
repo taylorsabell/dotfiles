@@ -101,11 +101,14 @@ brew install gs
 brew install node
 
 # Installs casks
+brew install --cask 1password
 brew install --cask 1password-cli
+brew install --cask bitwarden
 brew install --cask dbeaver-community
 brew install --cask docker
 brew install --cask figma
 brew install --cask google-chrome
+brew install --cask iterm2
 brew install --cask slack
 brew install --cask visual-studio-code
 
