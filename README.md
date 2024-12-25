@@ -23,7 +23,14 @@
 - Opens Terminal, goes to where the repo was downloaded and allows Terminal to access files in the Downloads folder
 - Runs `sh brew.sh`
 
-### 
+### Configure Apps
+- 1Password
+- Chrome
+  - Turn off all the crap Google opts you into
+- Slack
+
+### Generate SSH Key
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 ## Installation
 
